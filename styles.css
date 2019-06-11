@@ -1,0 +1,63 @@
+html {
+    background-color: lightgray;
+}
+
+h1 {
+    font-size: 72px;
+    color: whitesmoke;
+    font-family: sans-serif, Arial;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.left, .right, .bottom {
+    min-height: 200px;
+    background-color: darkgray
+}
+
+.nav {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5vh 0px;
+    padding: 2vh 0px;
+}
+
+.nav a {
+    color: black;
+}
+
+.nav li {
+    margin: 0px 2%;
+    font-family:sans-serif, Arial;
+}
+
+.left {
+    width: 30%;
+    
+}
+.right {
+    background-color: red;
+    width: 70%;
+}
+
+.bottom {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.nav li a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
