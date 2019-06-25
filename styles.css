@@ -2,10 +2,12 @@ html {
     background-color: lightgray;
 }
 
-h1 {
-    font-size: 72px;
-    color: whitesmoke;
+.text {
+    font-size: 400%;
+    color: white;
     font-family: sans-serif, Arial;
+    display: inline-block;
+    
 }
 
 * {
@@ -15,16 +17,24 @@ h1 {
     list-style: none;
 }
 
-.left, .right, .bottom {
+.left,
+.right,
+.bottom,
+.bottom2 {
     min-height: 200px;
     background-color: darkgray
+}
+
+header {
+    display: flex;
+    align-items: center;
 }
 
 .nav {
     background-color: white;
     display: flex;
     justify-content: flex-end;
-    margin: 5vh 0px;
+    margin: 0vh 0px 2vh 0px;
     padding: 2vh 0px;
 }
 
@@ -34,20 +44,23 @@ h1 {
 
 .nav li {
     margin: 0px 2%;
-    font-family:sans-serif, Arial;
+    font-family: sans-serif, Arial;
 }
 
-.left {
-    width: 30%;
-    
-}
+/*.left {
+    width: 40%;
+}*/
+
 .right {
-    background-color: red;
-    width: 70%;
+    width: 60%;
 }
 
 .bottom {
-    width: 100%;
+    width: 45%;
+}
+
+.bottom2 {
+    width: 55%;
 }
 
 section {
@@ -58,6 +71,61 @@ section {
 }
 
 .nav li a:hover {
-    color: darkorange;
+    color: red;
     text-decoration: underline;
+}
+
+.logo {
+    width: 18%;
+}
+
+.text:hover {
+    color: black;
+}
+
+.text:visited {
+    color: ;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.image1 {
+    width: 80%;
 }
