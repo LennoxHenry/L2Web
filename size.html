@@ -1,0 +1,63 @@
+<!doctype html>
+
+<head>
+    <title> Excalibur - Sizing </title>
+    <script>
+        function calculate(){
+            var data = document.getElementById("size").value;
+            if(data <= 34){
+                document.getElementById("answer").innerHTML = "You are smaller than our smallest size";
+            }
+            else if(data <= 35){
+                document.getElementById("answer").innerHTML = "You size is XXS";
+            }   
+            else if(data <= 37){
+                document.getElementById("answer").innerHTML = "You size is XS";
+            }
+            else if(data <= 39){
+                document.getElementById("answer").innerHTML = "You size is S";
+            }
+            else if(data <= 41){
+                document.getElementById("answer").innerHTML = "You size is M";
+            }
+            else if(data <= 44){
+                document.getElementById("answer").innerHTML = "You size is L";
+            }
+            else if(data <= 47){
+                document.getElementById("answer").innerHTML = "You size is XL";
+            } 
+            else if(data <= 50){
+                document.getElementById("answer").innerHTML = "You size is XXL";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "You size is larger than our largest size";
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Photoshop/logo.png">
+
+        <a class="text" href="index.html">Excalibur Clothing</a>
+    </header>
+
+
+    <ul class="nav">
+
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="shop.html">Products</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+    </ul>
+
+    <section>
+        <form>
+        <h1> Size Calculator for Chest Size </h1>
+        <input type="number" name="Size" id="size">
+        <input type="button" value="Calculate" onClick="calculate()">
+        <p id='answer'></p>
+        </form>
+    </section>
+</body>
