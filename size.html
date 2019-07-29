@@ -1,45 +1,40 @@
 <!doctype html>
-
+<html lang="en">
 <head>
-    <title> Excalibur - Sizing </title>
+    <meta charset="UTF-8">
+    <title> Excalibur - Pricing </title>
     <script>
-        function calculate(){
+        function calculate() {
             var data = document.getElementById("size").value;
-            if(data <= 34){
-                document.getElementById("answer").innerHTML = "You are smaller than our smallest size";
-            }
-            else if(data <= 35){
+            if (data <= 34) {
+                document.getElementById("answer").innerHTML = "You are smaller than our smallest size"; 
+            } else if (data <= 35) {
                 document.getElementById("answer").innerHTML = "You size is XXS";
-            }   
-            else if(data <= 37){
+            } else if (data <= 37) {
                 document.getElementById("answer").innerHTML = "You size is XS";
-            }
-            else if(data <= 39){
+            } else if (data <= 39) {
                 document.getElementById("answer").innerHTML = "You size is S";
-            }
-            else if(data <= 41){
+            } else if (data <= 41) {
                 document.getElementById("answer").innerHTML = "You size is M";
-            }
-            else if(data <= 44){
+            } else if (data <= 44) {
                 document.getElementById("answer").innerHTML = "You size is L";
-            }
-            else if(data <= 47){
+            } else if (data <= 47) {
                 document.getElementById("answer").innerHTML = "You size is XL";
-            } 
-            else if(data <= 50){
+            } else if (data <= 50) {
                 document.getElementById("answer").innerHTML = "You size is XXL";
-            }
-            else {
+            } else {
                 document.getElementById("answer").innerHTML = "You size is larger than our largest size";
             }
         }
-    </script>
+
+    </script> <!-- the size calculator is the only part using JavaScript -->
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
     <header>
-        <img class="logo" src="Photoshop/logo.png">
+        <img class="logo" src="Photoshop/logo.png" alt="logo">
 
         <a class="text" href="index.html">Excalibur Clothing</a>
     </header>
@@ -54,10 +49,42 @@
 
     <section>
         <form>
-        <h1> Size Calculator for Chest Size </h1>
-        <input type="number" name="Size" id="size">
-        <input type="button" value="Calculate" onClick="calculate()">
-        <p id='answer'></p>
+            <h3> Size Calculator for Chest Size </h3>
+            <input type="number" name="Size" id="size">
+            <input type="button" value="Calculate" onClick="calculate()"> <!-- more size calculator stuff -->
+            <p id='answer'></p>
+            <br>
+            <h3> Select Size </h3>
+
+            <select name="Size">
+                <option value="xxs">XXS</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option> <!-- The Size Picker -->
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
         </form>
+        <br>
+        <a class="button" href="pay.html">Continue to Checkout</a>
+
+        <h1> Don't Forget to check out these amazing items </h1>
+        <a href="shop.html">
+            <ul class="items">
+                <li>
+                    <img src="Photoshop/Supreme.png" alt="stuff">
+                </li>
+                <li>
+                    <img src="Photoshop/X.png" alt="stuff"> <!-- this shows more products -->
+                </li>
+            </ul>
+        </a>
     </section>
+
+
+    <footer>
+        © Lennox Henry 2019 - SBHS Digital
+    </footer>
 </body>
+</html>

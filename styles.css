@@ -1,12 +1,12 @@
 html {
-    background-color: lightgray;
+    background-color: lightgray; /* background colour */
 }
 
 .text {
     font-size: 400%;
     color: white;
     font-family: sans-serif, Arial;
-    display: inline-block;
+    display: inline-block;   /* div class text */
     
 }
 
@@ -14,7 +14,7 @@ html {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    list-style: none;
+    list-style: none; /* pretty much the whole HTML */
 }
 
 
@@ -41,11 +41,13 @@ header {
 }
 
 
-section {
+section { /* changes the size and look of the section */
     display: flex;
-    width: 90%;
+    width: 90%;  
     margin: auto;
     flex-direction: column;
+    background-color: darkgray;
+
 }
 
 .nav li a:hover {
@@ -62,7 +64,7 @@ section {
 }
 
 .text:visited {
-    color: ;
+    color: white;  /* This is so that it doesn't change the colour of the text to that ugly purple colour. */
 }
 
 
@@ -119,8 +121,40 @@ img:hover {
     width: 100%;
 }
 
-h2 {
+h2, h3, p {
     color: white;
     font-family: sans-serif, Arial;
 }
 
+h3, p {
+    font-size: 150%
+}
+
+h2:hover {
+    color: darkslategray;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    font-family: sans-serif, Arial;   /* for a button that uses a tags instead of the normal button used in the size calculator */
+}
+
+h4 {
+    font-family: sans-serif, Arial;
+}
+
+h1, .text {
+   text-shadow: 2px 2px black;
+}
+
+footer {
+    color: white;
+    background-color: darkgray;
+    margin-top: 3%;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif, Arial;
+}
